@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+	  <link rel="stylesheet" href="Proj11.css">
+</head>
+<body>
+    <div class="gallery">
+        <!-- Thumbnails -->
+        <div class="thumbnail" onclick="openLightbox(1)">
+            <img src="C:\Users\chenc\Pictures\Screenshots\image1.jpg" alt="Image 1">
+            <div class="caption">Image 1</div>
+        </div>
+        <div class="thumbnail" onclick="openLightbox(2)">
+            <img src="C:\Users\chenc\Pictures\Screenshots\image2.jpg" alt="Image 2">
+            <div class="caption">Image 2</div>
+        </div>
+        <!-- Add more thumbnails as needed -->
+
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-image" src="" alt="Image">
+        <div class="caption" id="lightbox-caption"></div>
+    </div>
+	</body>
+</html>
